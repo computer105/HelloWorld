@@ -62,6 +62,6 @@ li a:hover {
 <img src="${pageContext.request.contextPath}/Images/60011212105.jpg"width="550" alt="Italian Trulli">
 <br/>
 <hr/>
-
+<p>The Walk is free!</p>
 <p>Just do it .</p>
 </center>

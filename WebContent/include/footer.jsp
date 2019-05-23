@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<p>The Walk is free!</p>
 </body>
 </html>

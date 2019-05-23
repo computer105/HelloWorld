@@ -28,7 +28,7 @@
 	<jsp:include page="include/header.jsp"></jsp:include>
 	<h1>About</h1><br>
 
-	
+	<p>The Walk is free!</p>
 	<table style="width:100%" border="2">
  	 <tr>
     	<th colspan="4">Username password </th>

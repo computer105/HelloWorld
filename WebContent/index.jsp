@@ -80,7 +80,7 @@ body {
     <h2>Where?</h2>
    
     <h2>Price?</h2>
-    
+    <p>The Walk is free!</p>
   </div>
 </div>
 </body>

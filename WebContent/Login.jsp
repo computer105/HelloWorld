@@ -15,7 +15,7 @@
 
 
 <h1>Login</h1>
-
+<p>The Walk is free!</p>
 
 <form  action="About.php" method="get">
 Username :<br>
