@@ -4,11 +4,11 @@
 <style>
 p{
 
-	background-color: #000000;
+	background-color: #006600;
 	color : white;
-	pitch : 10 px;
+	pitch : 100 px;
 	font-family: verdana;
-	font-size: 180%;
+	font-size: 220%;
 	
 }
 body {

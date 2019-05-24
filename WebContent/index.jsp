@@ -20,6 +20,7 @@ body {
   padding: 8px;
   margin-top: 7px;
   border-bottom: 1px solid #f1f1f1;
+  color: #ffffff;
 }
 .main {
   float: left;
@@ -65,7 +66,7 @@ p{
 
 <jsp:include page="include/header.jsp"></jsp:include>
 
-<div style="background-color:tomato;padding:15px;">
+<div style="background-color:#006600;padding:15px;">
   <h1>JUST DO IT!!</h1>
   <h3>welcome to .... web LOL!</h3>
  
