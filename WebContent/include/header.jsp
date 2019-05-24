@@ -4,18 +4,18 @@
 <style>
 p{
 
-	background-color: tomato;
+	background-color: #000000;
 	color : white;
 	pitch : 10 px;
 	font-family: verdana;
-	font-size: 120%;
+	font-size: 180%;
 	
 }
 body {
-  background-color: #FFA07A;
+  background-color: #000000;
 }
 .cities {
-  background-color: olive;
+  background-color: #000000;
   color: tomato;
   margin: 20px;
   padding: 20px;
@@ -26,7 +26,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: tomato;
+  background-color: #006600;
 }
 
 li {
@@ -42,7 +42,7 @@ li a {
 }
 
 li a:hover {
-  background-color: indian red;
+  background-color: #000000;
   font-size: 140%;
 }
 
@@ -55,13 +55,10 @@ li a:hover {
   <li><a href="index.jsp">Home</a></li>
   <li><a href="Login.jsp">Login</a></li>
   <li><a href="About.jsp">About</a></li>
+  <li><a href="register.jsp">Register</a></li>
   
 </ul>
-<br>
 <center>
-<img src="${pageContext.request.contextPath}/Images/60011212105.jpg"width="550" alt="Italian Trulli">
-<br/>
-<hr/>
-<p>The Walk is free!</p>
+<img src="${pageContext.request.contextPath}/Images/60011212105.jpg"width="680" height="350" alt="Italian Trulli">
 <p>Just do it .</p>
 </center>

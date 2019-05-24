@@ -3,8 +3,11 @@
 <!DOCTYPE html>
 <html>
 <style>
+h2{
+ background-color: #009900
+}
 body {
-  background-color: lightblue;
+  background-color: #009900;
 }
 * {
   box-sizing: border-box;
@@ -25,11 +28,14 @@ body {
   overflow: hidden;
 }
 .right {
-  background-color: lightblue;
+  background-color: #000000;
   float: left;
   width: 20%;
   padding: 10px 15px;
   margin-top: 7px;
+}
+p{
+	background-color: #006600;
 }
 
 @media only screen and (max-width:800px) {
