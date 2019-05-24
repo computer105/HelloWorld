@@ -8,48 +8,42 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import org.apache.jasper.tagplugins.jstl.core.Out;
+import com.model.UseModel;
 
 /**
- * Servlet implementation class register1
+ * Servlet implementation class logth1
  */
-@WebServlet("/register1")
-public class register1 extends HttpServlet {
+@WebServlet("/logth1")
+public class logth1 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    static String email="bas@gmail.com";
-    static String pas="q";
+
+      
 	protected void processRequest(HttpServletRequest requst,HttpServletResponse response) throws ServletException,IOException{
-		PrintWriter out = response.getWriter();
-		System.out.println(requst.getParameter("firstname"));
-		System.out.println(requst.getParameter("lastname"));
-		System.out.println(requst.getParameter("email"));
-		System.out.println(requst.getParameter("call"));
-		System.out.println(requst.getParameter("password"));
-		
+		HttpSession session = requst.getSession(true);
 		response.setContentType("text/html");
-		if (requst.getParameter("firstname")!=null) {
-			out.println("Register success :"+requst.getParameter("firstname"));
-		}
-		else {
-			out.println("Register fail to firstname");
-		}
 		
-		if (requst.getParameter("email").indexOf("@")>=0) {
-			out.println("Register success :"+requst.getParameter("email"));
-			this.email=requst.getParameter("email");
-			this.pas=requst.getParameter("password");
+		String email = requst.getParameter("email");
+		String pass = requst.getParameter("password");
+		if (email.equals(register1.email)&&pass.equals(register1.pas)) {
+			
+			UseModel user = new UseModel("BAs", "god", email, pass, "0850082497");
+			//set session			
+			session.setAttribute("user", user);
 			response.sendRedirect(requst.getContextPath() + "/index.jsp");
+			 
 		}
 		else {
-			out.println("Register fail to email not @");
+			response.sendRedirect("login.jsp");
+			response.sendRedirect(requst.getContextPath() + "/index.jsp");
+			
 		}
-		
 	}
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public register1() {
+    public logth1() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -59,7 +53,6 @@ public class register1 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
 		processRequest(request,response);
 	}
 

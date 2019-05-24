@@ -4,7 +4,10 @@
 <html>
 <style>
 h2{
- background-color: #009900
+ background-color: #009900;
+ border-style: solid;
+	border-color: #00FF00;
+	border-width: 16;  
 }
 body {
   background-color: #009900;
@@ -15,18 +18,21 @@ body {
 .menu {
   float: left;
   width: 20%;
+ 	
 }
 .menuitem {
   padding: 8px;
   margin-top: 7px;
   border-bottom: 1px solid #f1f1f1;
   color: #ffffff;
+  
 }
 .main {
   float: left;
   width: 60%;
   padding: 0 20px;
   overflow: hidden;
+  background-color:#009900; 
 }
 .right {
   background-color: #000000;
@@ -44,6 +50,9 @@ p{
   .main {
     width: 80%;
     padding: 0;
+    border-style: solid;
+	border-color: #000000;
+	border-width: 16;  
   }
   .right {
     width: 100%;
@@ -66,6 +75,9 @@ p{
 
 <jsp:include page="include/header.jsp"></jsp:include>
 
+<center>
+<img src="${pageContext.request.contextPath}/Images/jd.jpg"width="1780" height="600" alt="Italian Trulli">
+</center>
 <div style="background-color:#006600;padding:15px;">
   <h1>JUST DO IT!!</h1>
   <h3>welcome to .... web LOL!</h3>
