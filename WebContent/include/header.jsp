@@ -26,8 +26,9 @@ p2{
 body {
   background-color:#000000;
   border-style: solid;
-	border-color: #00FF00;
-	border-width: 16;   
+  border-color: #00FF00;
+  border-width: 16;
+  background-repeat: repeat-x;   
 }
 .cities {
   background-color: #000000;
@@ -41,6 +42,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #006600;
+  text-shadow: 0 0 15px #00ff00;
 }
 li {
   float: left;
@@ -70,6 +72,7 @@ if(session.getAttribute("user")!=null){
   <li><a href="logout">Logout</a></li>
   <li><a href="About.jsp">About</a></li>
    <li><a href="ProFile.jsp">Profile</a></li>
+   <li><a href="Cal.jsp">Cal</a></li>
 </ul>
 	<% 
 }
@@ -81,6 +84,7 @@ else {
   <li><a href="Login.jsp">Login</a></li>
   <li><a href="About.jsp">About</a></li>
   <li><a href="register.jsp">Register</a></li>
+   <li><a href="Cal.jsp">Cal</a></li>
 </ul>
 	<% 
 }

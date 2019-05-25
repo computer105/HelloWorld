@@ -8,12 +8,25 @@
 * {
 	box-sizing: border-box;
 }
+input[type=submit]{
+	background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 .menu {
 	float: left;
 	width: 20%;
 	height: 80;
 	background-color: #006600;
+  	margin-left: 30px;
 }
 
 .menuitem {
@@ -81,8 +94,8 @@ h1{
 				<p2>Username :</p2>
 				<br> <input type="text" name="email"><br>
 				<p2>password :</p2>
-				<br> <input type="password" name="password"><br> <input
-					type="submit" value="Login">
+				<br> <input type="password" name="password"><br> 
+				<input type="submit" value="Login">
 				<br>
 				<br>
 			</form>

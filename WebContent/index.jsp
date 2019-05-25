@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html>
 <style>
+h1{
+text-shadow: 0 0 15px #00ff00;
+}
 h2{
  background-color: #009900;
  border-style: solid;
@@ -69,6 +72,8 @@ p{
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Welcome to WebGu</title>
+	<link rel = "stylesheet" href = "bootstrap=4.3.1-dist/css/bootstrap.css">
+<script type="text/javascript" src = "boostrap-4.3.1-dist/js/bootstrap.js"></script>
 </head>
 
 <body style="font-family:Verdana;">

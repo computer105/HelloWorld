@@ -28,6 +28,8 @@ h1{
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel = "stylesheet" href = "bootstrap=4.3.1-dist/css/bootstrap.css">
+<script type="text/javascript" src = "boostrap-4.3.1-dist/js/bootstrap.js"></script>
 </head>
 <body>
 <jsp:include page="include/header.jsp"></jsp:include>

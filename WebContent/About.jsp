@@ -9,6 +9,7 @@
 .menu {
   float: left;
   width: 20%;
+  text-shadow: 0 0 15px #00ff00;
  	
 }
 .menuitem {
@@ -16,6 +17,8 @@
   margin-top: 7px;
   border-bottom: 1px solid #f1f1f1;
   color: #ffffff;
+  text-shadow: 0 0 15px #00ff00;
+  
   
 }
 .main {
@@ -76,6 +79,8 @@ p{
 
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel = "stylesheet" href = "bootstrap=4.3.1-dist/css/bootstrap.css">
+<script type="text/javascript" src = "boostrap-4.3.1-dist/js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -99,6 +104,7 @@ p{
    <img src="${pageContext.request.contextPath}/Images/t2.jpg"width="750" height="350" alt="Italian Trulli"><br>
   </div>
 </div>
+
 	
 	
 	
