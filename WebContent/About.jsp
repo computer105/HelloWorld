@@ -79,8 +79,9 @@ p{
 
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link rel = "stylesheet" href = "bootstrap=4.3.1-dist/css/bootstrap.css">
-<script type="text/javascript" src = "boostrap-4.3.1-dist/js/bootstrap.js"></script>
+<link rel = "stylesheet" href = "bootstrap-4.3.1-dist/css/bootstrap.css">
+<script type="text/javascript" src = "js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src = "bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -102,6 +103,32 @@ p{
   <div class="main">
   <img src="${pageContext.request.contextPath}/Images/thanos.jpg"width="750" height="350" alt="Italian Trulli"><br>
    <img src="${pageContext.request.contextPath}/Images/t2.jpg"width="750" height="350" alt="Italian Trulli"><br>
+   <br>
+   <h2>Basic HTML Table</h2>
+
+<table class="table table-hover" style="width:100%">
+  <tr class="thead-dark">
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr >
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+   
   </div>
 </div>
 

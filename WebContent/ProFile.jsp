@@ -12,6 +12,13 @@
   width: 20%;
   background: #006600;
 }
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+  background-color:#009900; 
+}
 h2{
   font: verana;
   color: white;
@@ -26,16 +33,16 @@ h1{
 }
 </style>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="ProFile">
 <title>Insert title here</title>
-<link rel = "stylesheet" href = "bootstrap=4.3.1-dist/css/bootstrap.css">
-<script type="text/javascript" src = "boostrap-4.3.1-dist/js/bootstrap.js"></script>
+<link rel = "stylesheet" href = "bootstrap-4.3.1-dist/css/bootstrap.css">
+<script type="text/javascript" src = "js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src = "bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 <jsp:include page="include/header.jsp"></jsp:include>
 	<% UseModel use =(UseModel) session.getAttribute("user"); %>
 <hr>
-<h2>ProFile</h2><br>
 <div style="overflow: auto">
 		<div class="menu">
 		

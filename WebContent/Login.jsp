@@ -8,17 +8,18 @@
 * {
 	box-sizing: border-box;
 }
-input[type=submit]{
+
+input[type=submit] {
 	background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
 }
 
 .menu {
@@ -26,7 +27,7 @@ input[type=submit]{
 	width: 20%;
 	height: 80;
 	background-color: #006600;
-  	margin-left: 30px;
+	margin-left: 30px;
 }
 
 .menuitem {
@@ -69,41 +70,60 @@ input[type=submit]{
 		width: 100%;
 	}
 }
-h1{
+
+h1 {
 	font-size: 220%;
 	font-family: verdana;
 	color: white;
-	color : white;
-	pitch : 10 px;
+	color: white;
+	pitch: 10 px;
 	background: #00ff00;
 }
 </style>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Login</title>
+<link rel = "stylesheet" href = "bootstrap-4.3.1-dist/css/bootstrap.css">
+<script type="text/javascript" src = "js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src = "bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 
+
+
 	<jsp:include page="include/header.jsp"></jsp:include><hr>
-<h1>Login</h1>
+	<h1>Login</h1>
 	<div style="overflow: auto">
 		<div class="menu">
 			<form action="${pageContext.request.contextPath}//logth1"
 				method="get">
-				<br>
-				<img src="${pageContext.request.contextPath}/Images/iogin.png"width="120" height="120" alt="Italian Trulli"><br>
-				<p2>Username :</p2>
-				<br> <input type="text" name="email"><br>
-				<p2>password :</p2>
-				<br> <input type="password" name="password"><br> 
-				<input type="submit" value="Login">
-				<br>
-				<br>
+				<br> <img
+					src="${pageContext.request.contextPath}/Images/iogin.png"
+					width="120" height="120" alt="Italian Trulli"><br>
+				<form action="/action_page.php">
+					<div class="form-group">
+						<label for="email">Email address:</label> <br> <input
+							type="text" name="email" placeholder="Enter email"><br>
+					</div>
+					<div class="form-group">
+						<label for="pwd">Password:</label> <br> <input
+							type="password" name="password"  placeholder="password"><br>
+					</div>
+					<div class="form-group form-check">
+						<label class="form-check-label"> <input
+							class="form-check-input" type="checkbox"> Remember me
+						</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+
+
 			</form>
 		</div>
 		<div class="main">
-   			<iframe src="${pageContext.request.contextPath}/Images/jj.jpg" height="550" width="650"style="border:none;"></iframe>
-  		</div>
+			<iframe src="${pageContext.request.contextPath}/Images/jj.jpg"
+				height="550" width="650" style="border: none;"></iframe>
+		</div>
 	</div>
-	
+
 </body>
 </html>

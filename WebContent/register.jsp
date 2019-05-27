@@ -65,37 +65,16 @@
 	}
 }
 
-input[type=submit]{
-	background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-input[type=reset]{
-	background-color: #CC0000; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+
+
 	
 
 </style>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<link rel = "stylesheet" href = "bootstrap=4.3.1-dist/css/bootstrap.css">
-<script type="text/javascript" src = "boostrap-4.3.1-dist/js/bootstrap.js"></script>
+<title>register.jsp</title>
+<link rel = "stylesheet" href = "bootstrap-4.3.1-dist/css/bootstrap.css">
+<script type="text/javascript" src = "js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src = "bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<script type = "text/javascript">
@@ -147,12 +126,12 @@ input[type=reset]{
 
 		<form onsubmit="return checkinput()" action="${pageContext.request.contextPath}/register1" method = "get">
 		
-			<p2>First name:</p2><br> <input type="text" id = "firstname" firstname"><br>
-			<p2>Last name:</p2><br> <input type="text" id = "lastname" name="lastname"> <br>
-			<p2>Email:</p2><br> <input type="text" id = "email" name="email"> <br>
-			<p2>Password:</p2><br> <input type="password" id = "password" name="password"> <br>
-			<p2>conpassword:</p2><br> <input type="password" id = "cpassword" name="password"> <br> <input
-				type="submit" value="Submit"> | <input type="reset" value = "Reset">
+			<p2>First name:</p2><br> <input type="text" id = "firstname" firstname" placeholder="First name"><br>
+			<p2>Last name:</p2><br> <input type="text" id = "lastname" name="lastname" placeholder="Last name"> <br>
+			<p2>Email:</p2><br> <input type="text" id = "email" name="email" placeholder="Enter"> <br>
+			<p2>Password:</p2><br> <input type="password" id = "password" name="password" placeholder="Password"> <br>
+			<p2>conpassword:</p2><br> <input type="password" id = "cpassword" name="password" placeholder="conpassword"> <br> <input
+				type="submit" value="Submit" class="btn btn-success"> | <input type="reset" value = "Reset" class="btn btn-danger">
 				<p3 id = "errerms" ></p3>
 		</form>
 	</dir>
