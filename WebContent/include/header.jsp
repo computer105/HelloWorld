@@ -157,6 +157,8 @@ body style="font-family:Verdana;">
 		<li><a href="register.jsp">Register</a></li>
 		<li><a href="Cal.jsp">Cal</a></li>
 		<li><a href="bootstrap.jsp">bootstrap</a></li>
+		<li><a href="chart.jsp">chart</a></li>
+		<li><a href="map.jsp">map</a></li>
 	</ul>
 	<%
 		}
